@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(roboto.woff) format('woff');
+}
+/* Portrait */
+@media only screen and (orientation:portrait) {
+    #eventos {
+  	width:100%;float:left;
+  }
+}
+/* Landscape */
+@media only screen and (orientation:landscape) {
+  #eventos {
+  	width:50%;float:right;
+  }
+  /* prueba abel*/
+  @media only screen and (min-device-width : 700px) {
+  #eventos {
+    color:red;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700);
+@import url(http://fonts.googleapis.com/css?family=Arvo:700);
+@import url(http://fonts.googleapis.com/css?family=Lato:700);
+*/
+
+.bg1 {
+background: url('images/bg1.jpg') center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+
+.bg2 {
+background: url('images/bg2.jpg') center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg3 {
+background: url('images/bg3.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg4 {
+background: url('images/bg4.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg5 {
+background: url('images/bg5.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg6 {
+background: url('images/bg6.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg7 {
+background: url('images/bg7.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg8 {
+background: url('images/bg8.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg9 {
+background: url('images/bg9.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg10 {
+background: url('images/bg10.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg11 {
+background: url('images/bg11.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg12 {
+background: url('images/bg12.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg13 {
+background: url('images/bg13.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg14 {
+background: url('images/bg14.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg15 {
+background: url('images/bg15.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+.bg16 {
+background: url('images/bg16.jpg') #000000 center center fixed;
+background-size: cover;
+background-repeat:no-repeat;
+font-size:100%;
+/*text-transform: uppercase;*/
+font-weight: 700;
+}
+h2 {
+font-size: 2.8em;
+color: white;
+margin: 0.25em 0;
+}
+/* nav */
+nav {
+  width: 100%;
+  background: white;
+  height: 48px;
+  margin-top: 0px;
+}
+nav ul {
+  width: 100%;
+  margin-left: 30%;
+  margin-left: -webkit-calc(50%-120px);
+  margin-left: calc(50%-120px);
+}
+nav ul li {
+  list-style-type: none;
+}
+nav li {
+  width: 48px;
+  float: left;
+  margin-left: 15%;
+  margin-left: -webkit-calc((100% - 192px) / 16);
+  margin-left: calc((100% - 192px) / 16);
+}
+nav img {
+  height: 48px;
+}
+#subnavegador {
+width: 100%;
+background: white;
+height: 10px;  
+}
+#subnavegador ul {
+  width: 100%;
+}
+#subnavegador ul li {
+  width: 100%;
+  list-style-type: none;
+}
+.bloque {
+background: #04cae0;
+padding: 0em 0.5em;
+}
+.bloque2 {
+background: #00ccff;
+padding: 0em 0.5em;
+}
+
+.roboto {
+font-family: 'Roboto Slab', serif;
+}
+.josefa {
+font-family: 'Josefin Slab', serif;
+}
+.arvo {
+font-family: 'Arvo', serif;
+}
+.lato {
+font-family: 'Lato', sans-serif;
+}
+
+#reload_container{
+position: absolute;
+bottom:5px;
+width:90%;
+height:64px;
+background:white;
+}
+#reload{
+margin-left:40%;
+}
+
