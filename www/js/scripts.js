@@ -14,7 +14,7 @@ function cortar_fecha(fecha){
 array_fotos = {
     cat_id_1    : ["foto1.jpg"], // F1
     cat_id_4    : ["foto1.jpg"], // MotoGP
-    cat_id_5    : ["tc-1.png","tc-2.png","tc-3.png","tc-4.png","tc-6.png","tc-7.png","tc-8.png","tc-9.png","tc-14.png","tc-15.png"], // TC
+    cat_id_5    : ["tc-1.png","tc-2.png","tc-3.png","tc-4.png"], // TC
     cat_id_6    : ["foto1.jpg"], // WEC
     cat_id_7    : ["foto1.jpg"], // WRC
     cat_id_8    : ["foto1.jpg"], // STC 2000
