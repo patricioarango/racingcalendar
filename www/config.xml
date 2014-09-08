@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegaptips.racing_calendar" version="0.0.1" xmlns="http://www.w3.org/ns/widgets"  xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Racing Calendar</name>
     <description>
@@ -14,5 +14,5 @@
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="true" />
     <preference name="orientation" value="portrait" />
-     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
+     
 </widget>
