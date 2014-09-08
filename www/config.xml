@@ -6,10 +6,10 @@
         version     = "1.0.0" >
 
     <!-- versionCode is optional and Android only -->
-<preference name="phonegap-version" />
+<preference name="phonegap-version" value="3.5.0" />
 <preference name="orientation" value="portrait" />
 <preference name="fullscreen" value="false" /> 
-<access origin="http://autoplay.es/" subdomains="true" />
+<access origin="localhost" subdomains="true" />
     <name>Racing Calendar</name>
 
     <description>
