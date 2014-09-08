@@ -6,7 +6,10 @@
         version     = "1.0.0" >
 
     <!-- versionCode is optional and Android only -->
-<preference name="phonegap-version" value="3.1.0" />
+<preference name="phonegap-version" />
+<preference name="orientation" value="portrait" />
+<preference name="fullscreen" value="false" /> 
+<access origin="http://autoplay.es/" subdomains="true" />
     <name>Racing Calendar</name>
 
     <description>
@@ -17,4 +20,5 @@
         Patricio Arango
     </author>
 <icon src="icon.png" />
+<gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
 </widget>
