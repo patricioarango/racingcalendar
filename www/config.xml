@@ -1,24 +1,18 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns   = "http://www.w3.org/ns/widgets"
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.phonegap.example"
-        versionCode = "10" 
-        version     = "1.0.0" >
-
-    <!-- versionCode is optional and Android only -->
-<preference name="phonegap-version" value="3.5.0" />
-<preference name="orientation" value="portrait" />
-<preference name="fullscreen" value="false" /> 
-<access origin="localhost" subdomains="true" />
+﻿<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegaptips.racing_calendar" version="0.0.1" xmlns="http://www.w3.org/ns/widgets"  xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Racing Calendar</name>
-
     <description>
-        Para saber las carreras que habrá el fin de semana.
+        Para saber qué carreras habrá el fin de semana.
     </description>
-
-    <author href="http://plus.google.com/+PatricioArango" email="automondo@gmail.com">
-        Patricio Arango
+    <author email="patricioarango@gmail.com" href="http://plus.google.com/+PatricioArango">
+        @patricioarango
     </author>
-<icon src="icon.png" />
-<gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
+    <icon src="icon.png" />
+    <access origin="*" />
+    <access origin="http://d3gtl9l2a4fn1j.cloudfront.net" />
+    <access origin="http://image.tmdb.org" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="orientation" value="portrait" />
+     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
 </widget>
