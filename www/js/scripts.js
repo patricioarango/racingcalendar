@@ -10,28 +10,7 @@ function cortar_fecha(fecha){
         return fecha;
     }
 }    
-//arrays de fotos x categoria inicio
-array_fotos = {
-    cat_id_1    : ["foto1.jpg"], // F1
-    cat_id_4    : ["foto1.jpg"], // MotoGP
-    cat_id_5    : ["tc-1.png","tc-2.png","tc-3.png","tc-4.png"], // TC
-    cat_id_6    : ["foto1.jpg"], // WEC
-    cat_id_7    : ["foto1.jpg"], // WRC
-    cat_id_8    : ["foto1.jpg"], // STC 2000
-    cat_id_10   : ["foto1.jpg"], // Rally Arg.
-    cat_id_11   : ["foto1.jpg"], // TC 2000
-    cat_id_14   : ["foto1.jpg"], // TCP
-    cat_id_15   : ["foto1.jpg"], // TCM
-    cat_id_17   : ["foto1.jpg"], // TN
-    cat_id_18   : ["foto1.jpg"], // TRV6
-    cat_id_19   : ["foto1.jpg"], // DTM
-    cat_id_27   : ["foto1.jpg"], // Dakar
-    cat_id_28   : ["foto1.jpg"], // GP2
-    cat_id_29   : ["foto1.jpg"], // WTCC
-    cat_id_30   : ["foto1.jpg"], // SBK
-    cat_id_32   : ["foto1.jpg"], // RallyCross
-    cat_id_33   : ["foto1.jpg"] //  F-E
-};
+
 // Wait for Cordova to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -65,16 +44,21 @@ array_fotos = {
         console.log
         $.post(url, { ready: "1"}, function(data) {
             //sacamos loading del body
-            $("#loading").hide();
+            //$("#loading").hide();
+            //mostramos el header
+            $("header").show();
             console.log(data);
             //header rango fecha
             $("#rango_fecha").append('<img style="float: left;" class="anterior_se" src="images/prev2_w.png" height="40px" /><img style="float: right;" class="siguiente_se" src="images/next_w.png" height="40px" /><div class="texto23"><span class="ultra-bold">' + monthNames[cortar_fecha(data[0].desde.substr(4, 2))] + '</span><span class="light">' + cortar_fecha(data[0].desde.substr(6, 2)) + '/<span class="ultra-bold">' + monthNames[cortar_fecha(data[0].hasta.substr(4, 2))] + '</span><span class="light">' + cortar_fecha(data[0].hasta.substr(6, 2))  + '</div>' );
             var eventos = $('#eventos').empty();
             for (var i=0; i<data.length; i++) {
-                //buscamos la foto random por categoria
-                var maximo = array_fotos["cat_id_" + data[i].categoria_id].length;
-                var numero_de_foto = Math.floor(Math.random() * maximo) + 1; //arrays de fotos x categoria fin
-                var foto = array_fotos["cat_id_" + data[i].categoria_id][(+numero_de_foto - 1)];
+                //buscamos la foto por categoria
+               if (data[i].imagen == null) {
+                    var foto = "images/foto1.jpg";
+               }
+               else {
+                    var foto = data[i].imagen;
+               }
                 //buscamos la distancia siempre que el circuito no sea el "240"
                 if (data[i].circuito_id != "240") {
                     var p1 = LatLon(Geo.parseDMS(latitud), Geo.parseDMS(longitud));
@@ -111,7 +95,7 @@ array_fotos = {
                 var mes = data[i].fecha.substr(3,2);
                 //altura para cada div
                 var altura_listado = ($( window ).width() * 600 ) / 1600;
-                 eventos.append('<div class="listado" style="height:'+ altura_listado + 'px; background-image:url(images/'+ foto + ');">'+ destacado + '<div class="principal"><span class="ultra-bold">' + categoria + ': </span><span class="light">' + data[i].carrera + '</span></div><div class="info"><span class="ultra-bold">' + monthNames[cortar_fecha(mes)] + '</span><span class="light">' + cortar_fecha(dia) + nro_fecha + foto + '</span></div><div class="distancia"> ' + distancia + '</div><div class="distancia"> ' + circuito + '</div></div>');
+                 eventos.append('<div class="listado" style="height:'+ altura_listado + 'px; background-image:url('+ foto + ');">'+ destacado + '<div class="principal"><span class="ultra-bold">' + categoria + ': </span><span class="light">' + data[i].carrera + '</span></div><div class="info"><span class="ultra-bold">' + monthNames[cortar_fecha(mes)] + '</span><span class="light">' + cortar_fecha(dia) + nro_fecha + '</span></div><div class="distancia"> ' + distancia + '</div><div class="distancia"> ' + circuito + '</div></div>');
             } //cierra for
         }, "json");
        

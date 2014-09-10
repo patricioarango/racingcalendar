@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SeriesMarker</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%;  
+  	}
+  
+body {
+	font-family: 'Arvo', serif;
+	color: black;
+	background-color: #34495e;
+	overflow: hidden;
+}
+section {
+	width: 100%;
+	height: 99%;
+}
+#message {
+	width:80%;
+	margin-left:10%;
+	margin-top: 35%;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+.flat {
+	display: inline-block;
+padding: 5px 0px;
+width: 50px;
+color: #FFF;
+
+text-transform: uppercase;
+letter-spacing: 1px;
+text-align: center;
+border: 1px solid #FFF;
+
+font-family: 'Lato', sans-serif;
+}
+</style>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Lato:300,900:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
+</head>
+
+<body>
+
+	<header>
+		
+	</header>
+	
+	<section>
+		<div id="message">
+			<!-- <img src="img/no_conn2.png" height="128px" /> -->
+			 <img style="vertical-align: middle;" src="img/no_conn5.png" width="100px" /> <span style="font-weight:700;">Not connected.</span> <span style="font-weight:300;">Please tap to try again.</span>
+			
+		</div>
+	</section>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.js"></script>
+       
+         
+<script>
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+$("body").click(function() {
+	var location = getQueryVariable("location");
+	window.location.href = location + ".html";
+});
+</script>
+</body>
+
+</html>

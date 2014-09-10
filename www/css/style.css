@@ -21,6 +21,7 @@ html, body { margin: 0; padding: 0; }
 body {
 	font-family: 'Raleway', sans-serif;
 	background-color: #34495e;
+	
 }
 header {
 	background-color: #3498db;
@@ -72,4 +73,10 @@ section {
 	font-size: 13px;
 	padding-left: 40px;
 }
-
+.loading_contenedor {
+	width: 50%;
+	float:left;
+}
+#loading {
+	width: 50%;
+}
