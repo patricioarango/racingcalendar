@@ -12,11 +12,7 @@ html, body { margin: 0; padding: 0; }
   src: local('Open Sans'), local('OpenSans'), url(css/opensans.woff) format('woff');
 }
 */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  src: local('Raleway'), url(css/Raleway.ttf) format('ttf');
-}
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 body {
 	font-family: 'Raleway', sans-serif;
