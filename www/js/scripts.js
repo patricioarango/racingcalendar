@@ -47,7 +47,7 @@ function cortar_fecha(fecha){
     }
     
     function get_autowikipedia_events(latitud,longitud) {
-        checkConnection();
+        
         var posicion = getUrlParameter('posicion');
         if (posicion  == null) {
             posicion = 0;
