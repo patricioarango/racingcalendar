@@ -72,7 +72,7 @@ function cortar_fecha(fecha){
                 }
                 //destacados
                 if (data[i].destacado == "1") {
-                     var destacado = '<img style="float:right;height:30px;padding-top: 20px;padding-right: 20px;" src="images/star.png" />' ;
+                     var destacado = '<img style="float:right;height:30px;padding-top: 20px;padding-right: 20px;" src="images/star2.png" />' ;
                 }
                 else {
                      var destacado = "";     

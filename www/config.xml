@@ -15,3 +15,4 @@
     <preference name="orientation" value="portrait" />
      <gap:plugin name="org.apache.cordova.geolocation" />
 </widget>
+<preference name="StatusBarBackgroundColor" value="#3498db" />
