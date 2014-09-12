@@ -10,32 +10,33 @@ function cortar_fecha(fecha){
         return fecha;
     }
 }    
-function checkConnection() {
-    console.log("chequeamos conexion");
-        var networkState = navigator.network.connection.type;
-        if(networkState == "none") { 
-          window.location.href="no_internet.html?location=index";
+    //chequear conexion
+    function checkConnection() {
+    var networkState = navigator.network.connection.type;
+
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Conexión desconocida';
+    states[Connection.ETHERNET] = 'Conexión ethernet';
+    states[Connection.WIFI]     = 'Conexión WiFi';
+    states[Connection.CELL_2G]  = 'Conexión movil 2G';
+    states[Connection.CELL_3G]  = 'Conexión movil 3G';
+    states[Connection.CELL_4G]  = 'Conexión movil 4G';
+    states[Connection.NONE]     = 'Sin conexión';
+
+        if (states[networkState] ==  'Sin conexión') {
+            console.log("sin conexion a internet");
+            window.location.href="no_internet.html?location=index";
         }
-        var states = {};
-        states[Connection.UNKNOWN]  = 'Unknown connection';
-        states[Connection.ETHERNET] = 'Ethernet connection';
-        states[Connection.WIFI]     = 'WiFi connection';
-        states[Connection.CELL_2G]  = 'Cell 2G connection';
-        states[Connection.CELL_3G]  = 'Cell 3G connection';
-        states[Connection.CELL_4G]  = 'Cell 4G connection';
-        states[Connection.NONE]     = 'No network connection';
-}
-// Wait for Cordova to load
-    //
+    }
+    // Wait for Cordova to load
     document.addEventListener("deviceready", onDeviceReady, false);
 
     // Cordova is ready
-    //
     function onDeviceReady() {
         checkConnection();
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
-
+    
     // onSuccess Geolocation
     function onSuccess(position) {
         get_autowikipedia_events(position.coords.latitude,position.coords.longitude);
