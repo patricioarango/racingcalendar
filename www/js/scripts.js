@@ -49,7 +49,7 @@ function cortar_fecha(fecha){
             $("header").show();
             console.log(data);
             //header rango fecha
-            $("#rango_fecha").append('<img style="float: left;" class="anterior_se" src="images/prev2_w.png" height="40px" /><img style="float: right;" class="siguiente_se" src="images/next_w.png" height="40px" /><div class="texto23"><span class="ultra-bold">' + monthNames[cortar_fecha(data[0].desde.substr(4, 2))] + '</span><span class="light">' + cortar_fecha(data[0].desde.substr(6, 2)) + '/<span class="ultra-bold">' + monthNames[cortar_fecha(data[0].hasta.substr(4, 2))] + '</span><span class="light">' + cortar_fecha(data[0].hasta.substr(6, 2))  + '</div>' );
+            $("#rango_fecha").append('<img style="float: left;" class="anterior_se" src="images/prev2_w.png" height="40px" /><img style="float: right;" class="siguiente_se" src="images/next2_w.png" height="40px" /><div class="texto23"><span class="ultra-bold">' + monthNames[cortar_fecha(data[0].desde.substr(4, 2))] + '</span><span class="light">' + cortar_fecha(data[0].desde.substr(6, 2)) + '/<span class="ultra-bold">' + monthNames[cortar_fecha(data[0].hasta.substr(4, 2))] + '</span><span class="light">' + cortar_fecha(data[0].hasta.substr(6, 2))  + '</div>' );
             var eventos = $('#eventos').empty();
             for (var i=0; i<data.length; i++) {
                 //buscamos la foto por categoria
