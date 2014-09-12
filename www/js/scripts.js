@@ -10,7 +10,21 @@ function cortar_fecha(fecha){
         return fecha;
     }
 }    
-
+function checkConnection() {
+    console.log("chequeamos conexion");
+        var networkState = navigator.network.connection.type;
+        if(networkState == "none") { 
+          window.location.href="no_internet.html?location=index";
+        }
+        var states = {};
+        states[Connection.UNKNOWN]  = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI]     = 'WiFi connection';
+        states[Connection.CELL_2G]  = 'Cell 2G connection';
+        states[Connection.CELL_3G]  = 'Cell 3G connection';
+        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.NONE]     = 'No network connection';
+}
 // Wait for Cordova to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -18,6 +32,7 @@ function cortar_fecha(fecha){
     // Cordova is ready
     //
     function onDeviceReady() {
+        checkConnection();
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
 
@@ -27,8 +42,8 @@ function cortar_fecha(fecha){
     }
 
     function onError(error) {
-        alert('code: '    + error.code    + '\n' +
-                'message: ' + error.message + '\n');
+        console.log("no tiene habilitado geolocation");
+        window.location.href="no_geolocation.html?location=index";
     }
     
     function get_autowikipedia_events(latitud,longitud) {
@@ -93,9 +108,13 @@ function cortar_fecha(fecha){
                 }
                 var dia = data[i].fecha.substr(0,2);
                 var mes = data[i].fecha.substr(3,2);
+                //tamaños fuentes
+                var fuente_principal = ($( window ).width() * 20 ) / 480;
+                var fuente_info = ($( window ).width() * 14 ) / 480;
+                var fuente_distancia = ($( window ).width() * 13 ) / 480;
                 //altura para cada div
                 var altura_listado = ($( window ).width() * 600 ) / 1600;
-                 eventos.append('<div class="listado" style="height:'+ altura_listado + 'px; background-image:url('+ foto + ');">'+ destacado + '<div class="principal"><span class="ultra-bold">' + categoria + ': </span><span class="light">' + data[i].carrera + '</span></div><div class="info"><span class="ultra-bold">' + monthNames[cortar_fecha(mes)] + '</span><span class="light">' + cortar_fecha(dia) + nro_fecha + '</span></div><div class="distancia"> ' + distancia + '</div><div class="distancia"> ' + circuito + '</div></div>');
+                 eventos.append('<div class="listado" style="height:'+ altura_listado + 'px; background-image:url('+ foto + ');">'+ destacado + '<div class="principal" style="font-size:' + fuente_principal + 'px;"><span class="ultra-bold">' + categoria + ': </span><span class="light">' + data[i].carrera + '</span></div><div class="info" style="font-size:' + fuente_info + 'px;"><span class="ultra-bold">' + monthNames[cortar_fecha(mes)] + '</span><span class="light">' + cortar_fecha(dia) + nro_fecha + '</span></div><div class="distancia" style="font-size:' + fuente_distancia + 'px;"> ' + distancia + '</div><div class="distancia"> ' + circuito + '</div></div>');
             } //cierra for
         }, "json");
        

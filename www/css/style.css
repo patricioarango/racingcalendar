@@ -53,20 +53,17 @@ section {
 	background-repeat: no-repeat;
 }
 .principal {
-	width: 100%;
-	padding-left: 40px;
+	width: calc(100% - 40px);
+	margin-left: 40px;
 	padding-top: 20px;
 	padding-bottom: 5px;
-	font-size: 20px;
 }
 .info {
-	width: 100%;
-	font-size: 14px;
-	padding-left: 40px;
+	width: calc(100% - 40px);
+	margin-left: 40px;
 }
 .distancia {
-	width: 100%;
-	font-size: 13px;
+	width: calc(100% - 40px);
 	margin-left: 40px;
 }
 .loading_contenedor {
