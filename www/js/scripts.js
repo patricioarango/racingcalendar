@@ -33,7 +33,6 @@ function cortar_fecha(fecha){
 
     // Cordova is ready
     function onDeviceReady() {
-        checkConnection();
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
     
@@ -48,6 +47,7 @@ function cortar_fecha(fecha){
     }
     
     function get_autowikipedia_events(latitud,longitud) {
+        checkConnection();
         var posicion = getUrlParameter('posicion');
         if (posicion  == null) {
             posicion = 0;
