@@ -44,7 +44,7 @@ function cortar_fecha(fecha){
         console.log
         $.post(url, { ready: "1"}, function(data) {
             //sacamos loading del body
-            //$("#loading").hide();
+            $("#loading").hide();
             //mostramos el header
             $("header").show();
             console.log(data);

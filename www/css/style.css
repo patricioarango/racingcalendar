@@ -71,12 +71,14 @@ section {
 .distancia {
 	width: 100%;
 	font-size: 13px;
-	padding-left: 40px;
+	margin-left: 40px;
 }
 .loading_contenedor {
-	width: 50%;
-	float:left;
+	width: 25%;
+	float: left;
+	margin-left: 37.5%;
+	margin-top: 10%;
 }
 #loading {
-	width: 50%;
+	width: 100%;
 }
