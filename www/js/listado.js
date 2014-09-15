@@ -38,8 +38,7 @@ function cortar_fecha(fecha){
             id_categoria = id_categoria;
         }
         console.log("id_categoria" + id_categoria);
-        //var url = "http://autoplay.es/phonegap/racing_calendar_eventos_por_categoria.php?id_categoria=" + id_categoria;
-        var url = "http://autoplay.es/phonegap/racing_calendar_eventos_por_categoria.php";
+        var url = "http://autoplay.es/phonegap/racing_calendar_eventos_por_categoria.php?id_categoria=" + id_categoria;
             $.post(url, { ready: "1"}, function(data) {
             //sacamos loading del body
             $("#loading").hide();
