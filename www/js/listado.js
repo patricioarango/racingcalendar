@@ -79,7 +79,7 @@ colores_borde = ["","#c0392b","#8e44ad","#27ae60","#e67e22","#d35400","#f1c40f"]
                 }
                 //destacados
                 if (data[i].destacado == "1") {
-                     var destacado = '<img style="float:right;height:30px;padding-top: 20px;padding-right: 20px;" src="images/star2.png" />' ;
+                     var destacado = '<img style="float:right;height:30px;padding-top: 20px;padding-right: 20px;" src="images/star_black.png" />' ;
                 }
                 else {
                      var destacado = "";     
