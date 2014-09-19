@@ -11,8 +11,9 @@ function cortar_fecha(fecha){
     }
 }
 //array colores
-colores = ["","#e74c3c","#9b59b6","#2ecc71","#f39c12","#e67e22","#95a5a6"];    
-colores_borde = ["","#c0392b","#8e44ad","#27ae60","#e67e22","#d35400","#f1c40f"];    
+
+colores = ["","#e74c3c","#1abc9c","#95a5a6"];    
+colores_borde = ["","#c0392b","#16a085","#f1c40f"];    
     // Wait for Cordova to load
     document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -104,7 +105,7 @@ colores_borde = ["","#c0392b","#8e44ad","#27ae60","#e67e22","#d35400","#f1c40f"]
                 eventos.append('<div class="listado" style="height:'+ altura_listado + 'px; "><div class="listado_izq" style="height:'+ ( (altura_listado / 2 ) + 23)+ 'px;margin-top:'+ ( (altura_listado / 2) - 23 ) +'px; "><span class="ultra-bold" style="font-size:' + fuente_mes + 'px;">' + monthNames[cortar_fecha(mes)] + '</span><span class="light" style="font-size:' + fuente_fecha + 'px;">' + cortar_fecha(dia) + '</span></div><div class="listado_der" style="height:'+ altura_listado + 'px; ">'+ destacado + '<div class="principal" style="font-size:' + fuente_principal + 'px;"><span class="ultra-bold">' + data[i].carrera + '</span></div><div class="info" style="font-size:' + fuente_info + 'px;">' + nro_fecha + '</span></div><div class="distancia" style="font-size:' + fuente_distancia + 'px;"> ' + distancia + '</div><div class="distancia distancia_final" style="font-size:' + fuente_circuito + 'px;"> ' + circuito + '</div></div></div>');
             } //cierra for
             //obtenemos color random para layer
-            var rnd_color = Math.floor(Math.random() * (6 - 1 + 1)) +1;
+            var rnd_color = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
             $("header").css("background-color",colores[rnd_color]);
             $("header").css("border-color",colores_borde[rnd_color]);
             $(".listado_izq").css("color",colores[rnd_color]);
