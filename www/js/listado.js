@@ -1,5 +1,5 @@
 ﻿//meses
-monthNames = [ "","ENE", "FEB", "MAR", "ABR", "MAY", "JUN  ",
+monthNames = [ "","ENE", "FEB", "MAR", "ABR", "MAY", "JUN",
     "JUL", "AGO", "SEP", "OCT", "NOV", "DIC" ];
 //funcion sacar 0 de las fechas
 function cortar_fecha(fecha){
@@ -59,12 +59,13 @@ colores_borde = ["","#c0392b","#8e44ad","#27ae60","#e67e22","#d35400","#f1c40f"]
                     var categoria = data[0].categoria;
                 }
             //tamaños fuentes
-                var fuente_principal = ($( window ).width() * 20 ) / 480;
+                var fuente_principal = ($( window ).width() * 18 ) / 480;
                  var fuente_header = ($( window ).width() * 24 ) / 480;
-                var fuente_info = ($( window ).width() * 14 ) / 480;
-                var fuente_distancia = ($( window ).width() * 13 ) / 480;
-                var fuente_fecha = ($( window ).width() * 50 ) / 480;
-                var fuente_mes = ($( window ).width() * 20 ) / 480;
+                var fuente_info = ($( window ).width() * 13 ) / 480;
+                var fuente_distancia = ($( window ).width() * 14 ) / 480;
+                var fuente_circuito = ($( window ).width() * 15 ) / 480;
+                var fuente_fecha = ($( window ).width() * 25 ) / 480;
+                var fuente_mes = ($( window ).width() * 25 ) / 480;
             //contenido header
                  header.append('<img style="float: left;margin-left:20px;" class="anterior_se" src="images/back_w.png" height="40px" /><!-- <img style="float: right; margin-right:20px;" class="siguiente_se" src="images/next2_w.png" height="40px" />--><div class="texto23"><span class="ultra-bold" style="font-size:' + fuente_header + 'px;">category/</span><span class="light" style="font-size:' + fuente_header + 'px;">' + categoria + '</span></div>' );
             for (var i=0; i<data.length; i++) {
@@ -81,7 +82,7 @@ colores_borde = ["","#c0392b","#8e44ad","#27ae60","#e67e22","#d35400","#f1c40f"]
                 }
                 //destacados
                 if (data[i].destacado == "1") {
-                     var destacado = '<img style="float:right;height:30px;padding-top: 20px;padding-right: 20px;" src="images/star_black.png" />' ;
+                     var destacado = '<img style="float:right;height:30px;padding-right: 20px;" src="images/star_black.png" />' ;
                 }
                 else {
                      var destacado = "";     
@@ -100,7 +101,7 @@ colores_borde = ["","#c0392b","#8e44ad","#27ae60","#e67e22","#d35400","#f1c40f"]
                 var altura_listado = ($( window ).width() * 300 ) / 1600;
                 
                 //contenido body
-                eventos.append('<div class="listado" style="height:'+ altura_listado + 'px; "><div class="listado_izq" style="height:'+ altura_listado + 'px; "><span class="light" style="font-size:' + fuente_fecha + 'px;">' + cortar_fecha(dia) + '</span><br><span class="light" style="font-size:' + fuente_mes + 'px;">' + monthNames[cortar_fecha(mes)] + '</span></div><div class="listado_der" style="height:'+ altura_listado + 'px; ">'+ destacado + '<div class="principal" style="font-size:' + fuente_principal + 'px;"><span class="ultra-bold">' + data[i].carrera + '</span></div><div class="info" style="font-size:' + fuente_info + 'px;">' + nro_fecha + '</span></div><div class="distancia" style="font-size:' + fuente_distancia + 'px;"> ' + distancia + '</div><div class="distancia distancia_final"> ' + circuito + '</div></div></div>');
+                eventos.append('<div class="listado" style="height:'+ altura_listado + 'px; "><div class="listado_izq" style="height:'+ ( (altura_listado / 2 ) + 23)+ 'px;margin-top:'+ ( (altura_listado / 2) - 23 ) +'px; "><span class="ultra-bold" style="font-size:' + fuente_mes + 'px;">' + monthNames[cortar_fecha(mes)] + '</span><span class="light" style="font-size:' + fuente_fecha + 'px;">' + cortar_fecha(dia) + '</span></div><div class="listado_der" style="height:'+ altura_listado + 'px; ">'+ destacado + '<div class="principal" style="font-size:' + fuente_principal + 'px;"><span class="ultra-bold">' + data[i].carrera + '</span></div><div class="info" style="font-size:' + fuente_info + 'px;">' + nro_fecha + '</span></div><div class="distancia" style="font-size:' + fuente_distancia + 'px;"> ' + distancia + '</div><div class="distancia distancia_final" style="font-size:' + fuente_circuito + 'px;"> ' + circuito + '</div></div></div>');
             } //cierra for
             //obtenemos color random para layer
             var rnd_color = Math.floor(Math.random() * (6 - 1 + 1)) +1;

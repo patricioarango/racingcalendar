@@ -1,5 +1,5 @@
 ﻿//meses
-monthNames = [ "","ENE", "FEB", "MAR", "ABR", "MAY", "JUN  ",
+monthNames = [ "","ENE", "FEB", "MAR", "ABR", "MAY", "JUN",
     "JUL", "AGO", "SEP", "OCT", "NOV", "DIC" ];
 //funcion sacar 0 de las fechas
 function cortar_fecha(fecha){
@@ -95,9 +95,10 @@ function cortar_fecha(fecha){
                 var fuente_principal = ($( window ).width() * 20 ) / 480;
                 var fuente_info = ($( window ).width() * 14 ) / 480;
                 var fuente_distancia = ($( window ).width() * 13 ) / 480;
+                var fuente_circuito = ($( window ).width() * 16 ) / 480;
                 //altura para cada div
                 var altura_listado = ($( window ).width() * 600 ) / 1600;
-                 eventos.append('<div class="listado" data-id_categoria="' + data[i].categoria_id + '" style="height:'+ altura_listado + 'px; background-image:url('+ foto + ');">'+ destacado + '<div class="principal" style="font-size:' + fuente_principal + 'px;"><span class="ultra-bold">' + categoria + ': </span><span class="light">' + data[i].carrera + '</span></div><div class="info" style="font-size:' + fuente_info + 'px;"><span class="ultra-bold">' + monthNames[cortar_fecha(mes)] + '</span><span class="light">' + cortar_fecha(dia) + nro_fecha + '</span></div><div class="distancia" style="font-size:' + fuente_distancia + 'px;"> ' + distancia + '</div><div class="distancia"> ' + circuito + '</div></div>');
+                 eventos.append('<div class="listado" data-id_categoria="' + data[i].categoria_id + '" style="height:'+ altura_listado + 'px; background-image:url('+ foto + ');">'+ destacado + '<div class="principal" style="font-size:' + fuente_principal + 'px;"><span class="ultra-bold">' + categoria + ': </span><span class="light">' + data[i].carrera + '</span></div><div class="info" style="font-size:' + fuente_info + 'px;"><span class="ultra-bold">' + monthNames[cortar_fecha(mes)] + '</span><span class="light">' + cortar_fecha(dia) + nro_fecha + '</span></div><div class="distancia" style="font-size:' + fuente_distancia + 'px;"> ' + distancia + '</div><div class="distancia" style="font-size:' + fuente_circuito + 'px;"> ' + circuito + '</div></div>');
             } //cierra for
         }, "json");
        

@@ -52,12 +52,12 @@ section {
 	margin-top: 15px;
 }
 .listado_der {
-	width: 83%;
+	width: 75%;
 	float: left;
 	border-bottom: 2px solid #e74c3c;
 }
 .listado_izq {
-		width: 17%;
+		width: 25%;
 		float: left;
 		border-bottom: 2px solid #e74c3c;
 		color: #e74c3c;
