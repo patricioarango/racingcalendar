@@ -49,21 +49,23 @@ section {
 }
 .listado {
 	width: 100%;
+	border-bottom: 2px solid #e74c3c;
 }
 .listado_der {
 	width: 75%;
-	float: left;
-	border-bottom: 2px solid #e74c3c;
+	height: 100%;
+	margin-left: 25%;
 }
 .listado_izq {
 		width: 25%;
 		float: left;
-		border-bottom: 2px solid #e74c3c;
 		color: #e74c3c;
 		text-align: center;
+		height: 100%;
 }
 .principal {
 	width: 100%;
+
 }
 .info {
 	width: 100%;

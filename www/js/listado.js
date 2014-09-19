@@ -81,13 +81,7 @@ colores_borde = ["","#c0392b","#16a085","#f1c40f"];
                     var distancia = "";
                     var circuito = "";
                 }
-                //destacados
-                if (data[i].destacado == "1") {
-                     var destacado = '<img style="float:right;height:30px;padding-right: 20px;" src="images/star_black.png" />' ;
-                }
-                else {
-                     var destacado = "";     
-                }
+                
                 //con nro fecha
                 if (data[i].nro_fecha > 0 ){
                     var nro_fecha = " <span class='ultra-bold'>ROUND</span>" + data[i].nro_fecha;
@@ -102,16 +96,22 @@ colores_borde = ["","#c0392b","#16a085","#f1c40f"];
                 var altura_listado = ($( window ).height() * 100) / 800;
                 var margin_listado = (altura_listado * 15 ) / 90;
                 var margin_listado2 = (altura_listado * 10 ) / 90;
+                //destacados
+                if (data[i].destacado == "1") {
+                     var destacado = '<img style="float:right;height:30px;padding-right: 20px;padding-top: ' + margin_listado2 + 'px;" src="images/star_black.png" />' ;
+                }
+                else {
+                     var destacado = "";     
+                }
                 //contenido body
-                eventos.append('<div class="listado" style="height:'+ altura_listado + 'px;margin-top:' + margin_listado + 'px;"><div class="listado_izq" style="height:'+ ( (altura_listado / 2 ) + 23)+ 'px;margin-top:'+ ( (altura_listado / 2) - 23 ) +'px; "><span class="ultra-bold" style="font-size:' + fuente_mes + 'px;">' + monthNames[cortar_fecha(mes)] + '</span><span class="light" style="font-size:' + fuente_fecha + 'px;">' + cortar_fecha(dia) + '</span></div><div class="listado_der" style="height:'+ altura_listado + 'px; ">'+ destacado + '<div class="principal" style="font-size:' + fuente_principal + 'px;"><span class="ultra-bold">' + data[i].carrera + '</span></div><div class="info" style="font-size:' + fuente_info + 'px;">' + nro_fecha + '</span></div><div class="distancia" style="font-size:' + fuente_distancia + 'px;"> ' + distancia + '</div><div class="distancia distancia_final" style="font-size:' + fuente_circuito + 'px;"> ' + circuito + '</div></div></div>');
+                eventos.append('<div class="listado"><div class="listado_izq" style="margin-top:20px;"><span class="ultra-bold" style="font-size:' + fuente_mes + 'px;">' + monthNames[cortar_fecha(mes)] + '</span><span class="light" style="font-size:' + fuente_fecha + 'px;">' + cortar_fecha(dia) + '</span></div><div class="listado_der" style="">'+ destacado + '<div class="principal" style="font-size:' + fuente_principal + 'px;margin-top:' + margin_listado2 + 'px;"><span class="ultra-bold">' + data[i].carrera + '</span></div><div class="info" style="font-size:' + fuente_info + 'px;">' + nro_fecha + '</span></div><div class="distancia" style="font-size:' + fuente_distancia + 'px;"> ' + distancia + '</div><div class="distancia distancia_final" style="font-size:' + fuente_circuito + 'px;margin-bottom:' + margin_listado2 + 'px;"> ' + circuito + '</div></div></div>');
             } //cierra for
             //obtenemos color random para layer
             var rnd_color = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
             $("header").css("background-color",colores[rnd_color]);
             $("header").css("border-color",colores_borde[rnd_color]);
             $(".listado_izq").css("color",colores[rnd_color]);
-            $(".listado_izq").css("border-color",colores[rnd_color]);
-            $(".listado_der").css("border-color",colores[rnd_color]);
+            $(".listado").css("border-color",colores[rnd_color]);
         }, "json");
        
     }
