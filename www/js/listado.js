@@ -99,7 +99,7 @@ colores_borde = ["","#c0392b","#16a085","#f1c40f"];
                 var mes = data[i].fecha.substr(3,2);
                 
                 //altura para cada div
-                var altura_listado = ($( window ).height() * 90) / 800;
+                var altura_listado = ($( window ).height() * 100) / 800;
                 var margin_listado = (altura_listado * 15 ) / 90;
                 var margin_listado2 = (altura_listado * 10 ) / 90;
                 //contenido body
