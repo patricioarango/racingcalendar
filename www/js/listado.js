@@ -79,7 +79,7 @@ colores_borde = ["","#c0392b","#16a085","#f1c40f"];
                 }
                 else {
                     var distancia = "";
-                    var circuito = "";
+                    var circuito = "<div style='height:35px;'></div>";
                 }
                 
                 //con nro fecha
