@@ -1,8 +1,8 @@
 ﻿<?
-$dbHost = "awdb2013.db.8921995.hostedresource.com";
-$dbUser = "awdb2013";
-$dbPass = "GolPower!2011";
-$dbName = "awdb2013";
+$dbHost = "";
+$dbUser = "";
+$dbPass = "";
+$dbName = "";
 
 $conn = new mysqli($dbHost, $dbUser, $dbPass , $dbName);
 if ($conn->connect_errno) {
