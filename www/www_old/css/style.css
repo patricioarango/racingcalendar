@@ -12,11 +12,12 @@ html, body { margin: 0; padding: 0; }
   src: local('Open Sans'), local('OpenSans'), url(css/opensans.woff) format('woff');
 }
 */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 body {
-	/*font-family: 'Raleway', sans-serif;*/
-	background-color: #f9f9f9;
-	
+	font-family: 'Raleway', sans-serif;
+	background-color: #34495e;
+
 }
 header {
 	background-color: #3498db;
@@ -73,20 +74,4 @@ section {
 }
 #loading {
 	width: 100%;
-}
-.destacado {
-	color: #3498db;
-}
-.card-content {
-	font-size: 1.1em;
-}
-#navegador, #pie {
-	background-color: #3498db;
-}
-#nav-mobile {
-	margin-right: 30%;
-	font-size: 1.4em;
-}
-.no_eventos {
-	font-size: 1.5em;
 }

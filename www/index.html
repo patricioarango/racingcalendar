@@ -1,29 +1,43 @@
-<!doctype html>
 <html>
-<head>
-	<title>Racing Calendar</title>
+    <head>
+    <title>Racing Calendar</title>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen, handheld" />
-	
 	<script type="text/javascript" src="cordova.js"></script>
-</head>
-<body>
-	<header style="display:none;">
-		<div id="rango_fecha"></div>
-	</header>
-	<section>
+    </head>
 
-<div id="eventos"></div> 
-<div class="loading_contenedor"></div><div class="loading_contenedor"><img src="images/large.gif" id="loading" /></div>
-    </section>
-	<footer class="footer">
-	</footer>
-<script src="js/zepto.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/latlong.js"></script>
-<script src="js/geo.js"></script>
-<script src="js/scripts.js"></script>
+    <body>
+    <div class="navbar-fixed">
+	    <nav id="navegador">
+	    <div class="nav-wrapper" id="rango_fechas" data-posicion="0"></div>
+	  </nav>
+  </div>
+  <div id="eventos"></div>
 
-</body>
-</html>	
+      <footer id="pie">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Racing Calendar</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2015 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/latlong.js"></script>
+	<script src="js/geo.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/zepto.js"></script>
+	<script src="js/scripts.js"></script>
+    </body>
+  </html>
