@@ -3,27 +3,89 @@
 <head>
 	<title>Racing Calendar</title>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/listado.css" media="screen, handheld" />
-	
 	<script type="text/javascript" src="cordova.js"></script>
 </head>
 <body>
-	<header style="display:none;">
-		<div id="rango_fecha"></div>
-	</header>
+    <div class="navbar-fixed">
+	    <nav id="navegador">
+	    <i class="small mdi-navigation-arrow-back"></i>
+	    <div class="nav-wrapper brand-logo" id="rango_fechas" data-posicion="0"></div>
+	  </nav>
+  </div>
 	<section>
 
 <div id="eventos"></div> 
-<div class="loading_contenedor"></div><div class="loading_contenedor"><img src="images/gif_white.gif" id="loading" /></div>
-    </section>
-	<footer class="footer">
-	</footer>
-<script src="js/zepto.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/latlong.js"></script>
-<script src="js/geo.js"></script>
-<script src="js/listado.js"></script> 
+<!-- <div class="loading_contenedor"></div><div class="loading_contenedor"><img src="images/gif_white.gif" id="loading" /></div>
+	<div class="row valign-wrapper borde">
+		<div class="col s2 icono">
+			<i class="fa fa-check-circle"></i>
+		</div>
+		<div class="col s9">
+			<div class="lista_heading">6 Horas de Le Mans</div>
+			<div class="lista_secundario">Enero, 25. Round 1.</div>
+			<div class="lista_secundario">La Sarthe. 9500 kms.</div>
+		</div>
+		<div class="col s1">
+			<i class="small mdi-action-stars right"></i>
+		</div>
+	</div>
 
+	<div class="row valign-wrapper borde">
+		<div class="col s2 icono">
+			<i class="fa fa-dot-circle-o"></i>
+		</div>
+		<div class="col s9">
+			<div class="lista_heading">6 Horas de Le Mans</div>
+			<div class="lista_secundario">Enero, 25. Round 1.</div>
+			<div class="lista_secundario">La Sarthe. 9500 kms.</div>
+		</div>
+		<div class="col s1">
+			<i class="small mdi-action-stars right"></i>
+		</div>
+	</div>
+
+	<div class="row valign-wrapper borde">
+		<div class="col s2 icono">
+			<i class="fa fa-circle-o"></i>
+		</div>
+		<div class="col s9">
+			<div class="lista_heading">6 Horas de Le Mans</div>
+			<div class="lista_secundario">Enero, 25. Round 1.</div>
+			<div class="lista_secundario">La Sarthe. 9500 kms.</div>
+		</div>
+		<div class="col s1">
+
+		</div>
+	</div>
+	-->
+    </section>
+
+
+<footer id="pie">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Racing Calendar</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2015 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/latlong.js"></script>
+	<script src="js/geo.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/listado.js"></script>
 </body>
 </html>	

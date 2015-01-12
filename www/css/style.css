@@ -16,7 +16,7 @@ html, body { margin: 0; padding: 0; }
 body {
 	/*font-family: 'Raleway', sans-serif;*/
 	background-color: #f9f9f9;
-	
+	min-height: 250px;
 }
 header {
 	background-color: #3498db;
@@ -67,9 +67,11 @@ section {
 }
 .loading_contenedor {
 	width: 25%;
-	float: left;
 	margin-left: 37.5%;
 	margin-top: 10%;
+	margin-bottom: 10%;
+	border-radius: 12%;
+	-webkit-border-radius: 12%;
 }
 #loading {
 	width: 100%;

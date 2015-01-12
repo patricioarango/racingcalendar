@@ -1,21 +1,8 @@
 html, body { margin: 0; padding: 0; }
-/*
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(css/lato.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  src: local('Open Sans'), local('OpenSans'), url(css/opensans.woff) format('woff');
-}
-*/
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+
 
 body {
-	font-family: 'Raleway', sans-serif;
+
 	background-color: #ecf0f1;
 	
 }
@@ -83,6 +70,21 @@ section {
 #loading {
 	width: 100%;
 }
-.distancia_final {
-	
+.icono {
+	font-size: 3em;
+}
+.texto-secundario {
+	margin-left: 20px;
+}
+.borde {
+	border-bottom: 1px solid #e0e0e0;
+	padding: 10px 0px;
+}
+.lista_heading {
+	font-weight: 500;
+	font-size: 1.1em;
+}
+.lista_secundario {
+	color: rgba(0,0,0,0.54);
+	font-size: 0.9em;
 }

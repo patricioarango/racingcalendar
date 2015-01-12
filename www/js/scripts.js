@@ -32,15 +32,18 @@ function cortar_fecha(fecha){
     }
     
     function get_autowikipedia_events(latitud,longitud,posicion) {
+        $("#loading_contenedor").show();
         var posicion = posicion;
         console.log("posicion_actual" + posicion);
         var url = "http://autowikipedia.es/phonegap/racing_calendar_eventos.php?next_events=" + posicion;
         $.post(url, { ready: "1"}, function(data) {
+            //sacamos loading del body
+            $(".loading_contenedor").hide();
             $("#rango_fechas").empty();
             var eventos = $('#eventos').empty();
             console.log(data);
                 //header rango fecha
-                $("#rango_fechas").append('<a href="#" class="brand-logo"><i class="mdi-hardware-keyboard-arrow-left left anterior_se"></i><span class="ultra-bold">' + monthNames[cortar_fecha(data[0].desde.substr(4, 2))] + '</span><span>' + cortar_fecha(data[0].desde.substr(6, 2)) + '/ <span class="ultra-bold">' + monthNames[cortar_fecha(data[0].hasta.substr(4, 2))] + '</span><span>' + cortar_fecha(data[0].hasta.substr(6, 2))  + '<i class="mdi-hardware-keyboard-arrow-right right siguiente_se"></i></a>' );
+                $("#rango_fechas").append('<a href="#" class="brand-logo"><i class="mdi-hardware-keyboard-arrow-left left anterior_se"></i><span class="ultra-bold">' + monthNames[cortar_fecha(data[0].desde.substr(4, 2))] + '</span><span>' + cortar_fecha(data[0].desde.substr(6, 2)) + ' / <span class="ultra-bold">' + monthNames[cortar_fecha(data[0].hasta.substr(4, 2))] + '</span><span>' + cortar_fecha(data[0].hasta.substr(6, 2))  + '<i class="mdi-hardware-keyboard-arrow-right right siguiente_se"></i></a>' );
             if (data[0].resultados == 0) {
                 eventos.append('<div class="row">' +
                           '<div class="col s12 m12">' +
@@ -56,10 +59,6 @@ function cortar_fecha(fecha){
                 var circuito;
                 var nro_fecha;
                 var destacado;
-                //sacamos loading del body
-                $("#loading").hide();
-                //mostramos el header
-                $("header").show();
                 for (var i=0; i<data.length; i++) {
                     //buscamos la foto por categoria
                    if (data[i].imagen == null) {
@@ -139,7 +138,7 @@ $("#rango_fechas").on('click',".siguiente_se",function(e) {
     $("#rango_fechas").data("posicion", posicion_se)
     get_autowikipedia_events(latitud,longitud,posicion_se);
 });
-$("#eventos").on('click',".listado",function(e) {
+$("#eventos").on('click',".card",function(e) {
     e.preventDefault();
    window.location.href='listado.html?id_categoria=' + $(this).data("id_categoria");
 });
