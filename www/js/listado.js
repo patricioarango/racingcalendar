@@ -129,7 +129,7 @@ function getUrlParameter(sParam)
         }
     }
 }  
-$("header").on('click',".anterior_se",function(e) {
+$("#navegador").click(function(e) {
     e.preventDefault();
    window.location.href='index.html';
 });
