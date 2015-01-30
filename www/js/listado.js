@@ -31,6 +31,7 @@ colores = ["","#1abc9c","#3498db","#34495e","#f1c40f"];
         var tipo_icono;
         var distancia;
         var circuito;
+        var extension;
         var id_categoria = getUrlParameter('id_categoria');
 
         if (id_categoria  == null) {
@@ -58,13 +59,18 @@ colores = ["","#1abc9c","#3498db","#34495e","#f1c40f"];
             //contenido header
             header.append("category/" + categoria);
             for (var i=0; i<data.length; i++) {
+                if (data[i].extension != "") {
+                    extension = " (" + data[i].extension + " mts.)";
+                } else {
+                    extension = "";
+                }
                 //buscamos la distancia siempre que el circuito no sea el "240"
                 if (data[i].circuito_id != "240") {
                     var p1 = LatLon(Geo.parseDMS(latitud), Geo.parseDMS(longitud));
                     var p2 = LatLon(Geo.parseDMS(data[i].latitud), Geo.parseDMS(data[i].longitud));
                     distancia = Math.ceil(p1.distanceTo(p2));
-
-                    circuito = data[i].circuito + ". ";
+                    distancia = "A " + distancia + " kms. ";
+                    circuito = data[i].circuito + extension + ". ";
                 }
                 else {
                     distancia = "";
@@ -105,7 +111,7 @@ colores = ["","#1abc9c","#3498db","#34495e","#f1c40f"];
         '<div class="col s9">' +
             '<div class="lista_heading">'+data[i].carrera+'</div>' +
             '<div class="lista_secundario">'+monthNames[data[i].mes] +', '+ data[i].dia +'. Round '+data[i].nro_fecha+'.</div>' +
-            '<div class="lista_secundario">'+circuito+' '+distancia+' kms.</div>' +
+            '<div class="lista_secundario">'+circuito+' '+distancia+'</div>' +
         '</div>' +
         '<div class="col s1" style="color:'+color+';">' +
             destacado +
