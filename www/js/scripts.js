@@ -72,6 +72,8 @@ function cortar_fecha(fecha){
                         var p1 = LatLon(Geo.parseDMS(latitud), Geo.parseDMS(longitud));
                         var p2 = LatLon(Geo.parseDMS(data[i].latitud), Geo.parseDMS(data[i].longitud));
                         distancia = '<i class="mdi-maps-place">' + Math.ceil(p1.distanceTo(p2)) + " </i> kms ";
+                        //alert("descomentar esto para commit")
+                        //distancia = '<i class="mdi-maps-place">' + "5000" + " </i> kms ";
                         circuito = '<i class="mdi-maps-directions-car"></i> ' + data[i].circuito;
                     }
                     else {
@@ -142,3 +144,4 @@ $("#eventos").on('click',".card",function(e) {
     e.preventDefault();
    window.location.href='listado.html?id_categoria=' + $(this).data("id_categoria");
 });
+$('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70});
