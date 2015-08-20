@@ -1,0 +1,29 @@
+todo en un html
+no click
+$('yourElement').on( 'touchstart', function ( startEvent ) {});
+
+update cuando termina el scroll
+
+entro por primera vez, tengo que descargar toda la agenda del año. 
+luego, cada vez que entro o me muevo, debo chequear si hay conexion/algun update. 
+
+si no hay conexion no hay update, pero debo tomar las imagenes locales. 
+
+si hay conexion, hay update. 
+
+tabla carreras
+	id_carrera
+	carrera
+	nro_carrera
+	carreras_totales
+	fecha
+	categoria
+	id_categoria
+	categoria_short
+	destacado
+	latitud
+	longitud
+	id_circuito
+	circuito
+	extension
+	imagen

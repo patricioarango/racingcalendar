@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Your Website</title>
+   <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+   <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+</head>
+<body>
+  <header>
+<!--  <div class="navbar-fixed">
+  <nav class="blue lighten-1" id="nav_ppal">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <i class="material-icons" id="arrow" style="display:none;">arrow_back</i>
+      <span id="cate_cont"></span>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+  <div class="center valign" id="rango_fechas" data-posicion="0"></div>      
+  </nav>
+  </div> -->
+
+<div class="navbar-fixed" id="nav_listado">
+  <nav class="blue lighten-1">   
+    <i id="arrow23" class="material-icons small">&#xE5C4;</i>
+    <div class="brand-logo center" id="category_text"><span style="font-weight:200;">category / </span><span>Formula 111111</span></div>   
+  </nav>  
+</div>
+
+</header>  
+  <!-- 
+<div class="progress">
+      <div class="indeterminate"></div>
+  </div>   
+<div class="row center loading">
+   <div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>-->
+<div class="row" id="insert_message">
+  <div class="center red-text"><i class="material-icons medium">flash_on</i><span style="font-size:5em;font-weight:200;">175 </span><span style="font-size:3em;font-weight:200;">races</span></div>
+</div>
+  <section>
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="card flow-text" data-id_categoria="1">
+          <div class="card-image">
+            <img src="racing_calendar_pics/cat_id_1/foto-1.jpg">
+            <span class="card-title"><strong> FORMULA 1: </strong>  Zandvoort </span>
+          </div>
+          <div class="card-content">
+            <div class="col s10">
+              <p><i class="mdi-action-today"></i><strong> JUL12</strong> Round4</p>
+              <p> <i class="mdi-maps-place"></i> 455 kms</p>
+              <p> <i class="mdi-maps-directions-car"></i> Oscar y Juan Galvez </p>
+            </div>
+            <div class="col s2 destacado">
+                <i class="medium mdi-action-stars right blue-text  text-accent-3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <footer class="page-footer blue lighten-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Racing Calendar</h5>
+                <p class="grey-text text-lighten-4">Para saber qu&eacute; carreras hay el fin de semana.</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div id="alfa" class="container">
+            © 2015 Copyright Patricio Arango
+            <a class="grey-text text-lighten-4 right" href="http://autowikipedia.es" target="_blank">autowikipedia.es</a>
+            </div>
+          </div>
+        </footer> 
+        <script type="text/javascript" src="js/jQuery.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>    
+        <script type="text/javascript">
+        $(document).ready(function($) {
+            $(".button-collapse").sideNav({menuWidth: 240, activationWidth: 70});
+              get_dias_periodo();
+             //get_category_nav();
+        });
+        </script>    
+        <script type="text/javascript">
+monthNames = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN",
+    "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
+
+$("#rango_fechas").on('click',".anterior_se",function(e) {
+    e.preventDefault();
+    var posicion_inicial = $("#rango_fechas").data("posicion");
+    var posicion_se = posicion_inicial - 1;
+    console.log(posicion_se);
+    $("#rango_fechas").data("posicion", posicion_se);
+    get_dias_periodo();
+    
+});
+$("#rango_fechas").on('click',".siguiente_se",function(e) {
+    e.preventDefault();
+    var posicion_inicial = $("#rango_fechas").data("posicion");
+    var posicion_se = posicion_inicial + 1;
+    console.log(posicion_se);
+    $("#rango_fechas").data("posicion", posicion_se);
+    get_dias_periodo();    
+});
+
+function get_dias_periodo() {
+    var $rango_fechas = $("#rango_fechas");
+    var semana = $("#rango_fechas").data("posicion");
+    var now = new Date();
+    var lunes; var lun; var domingo; var dom;
+    if (semana < 0) {
+      lunes = new Date(now.setDate(now.getDate() - now.getDay() + 1 + (semana * 7)));
+      lun = lunes.getMonth();
+    } else {
+      lunes = new Date(now.setDate(now.getDate() - now.getDay() + (1 + (semana * 7))));
+      lun = lunes.getMonth();
+    }
+    //el domingo siempre son 7 dias a partir del lunes establecido
+    domingo = new Date(now.setDate(now.getDate() - now.getDay() + 7));
+    dom = domingo.getMonth();
+    
+    $rango_fechas.empty();
+    $rango_fechas.append('<span class="flow-text" style="font-size:1.9em;"><i class="mdi-hardware-keyboard-arrow-left anterior_se"></i><strong>' + monthNames[lun] + '</strong>' + lunes.getDate() + '<strong>/' + monthNames[dom] + '</strong>' + domingo.getDate() + ' <i class="mdi-hardware-keyboard-arrow-right siguiente_se"></i></span>');
+    return {
+        "fecha_inicial": lunes.yyyymmdd(),
+        "fecha_final": domingo.yyyymmdd()
+    }; 
+}
+
+Date.prototype.yyyymmdd = function() {
+  var yyyy = this.getFullYear().toString();
+  var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based
+  var dd  = this.getDate().toString();
+  return yyyy + (mm[1]?mm:"0"+mm[0]) + (dd[1]?dd:"0"+dd[0]); // padding
+};
+
+var a = Math.floor(Date.now() / 1000);
+console.log(a);
+
+$(document).ready(function() {
+    $("#insert_message").show();
+});
+
+var tc = "turismo carretera";
+console.log(tc.length + "aca");
+        </script>    
+</body>
+</html>

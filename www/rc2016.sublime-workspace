@@ -1,0 +1,1316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fun",
+				"funcionvacia"
+			],
+			[
+				"categr",
+				"categoria"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"cate",
+				"cate_cont"
+			],
+			[
+				"va",
+				"valign"
+			],
+			[
+				"remo",
+				"removeClass	.removeClass()"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"hay",
+				"hay_conexion"
+			],
+			[
+				"fech",
+				"fecha_final"
+			],
+			[
+				"fecha",
+				"fecha_inicial"
+			],
+			[
+				"pos",
+				"posicion_se"
+			],
+			[
+				"posi",
+				"posicion_inicial"
+			],
+			[
+				"resul",
+				"results"
+			],
+			[
+				"d",
+				"document"
+			],
+			[
+				"recepcion",
+				"recepcion_orden"
+			],
+			[
+				"id",
+				"id_error"
+			],
+			[
+				"recep",
+				"recepcion_orden"
+			],
+			[
+				"rece",
+				"recepcion_orden"
+			],
+			[
+				"tipo",
+				"tipo_comprobante"
+			],
+			[
+				"pro",
+				"proveedor_tarifario"
+			],
+			[
+				"id_pro",
+				"id_proveedor_tarifario"
+			],
+			[
+				"id_",
+				"id_padre"
+			],
+			[
+				"iIdPro",
+				"iIdProveedorTarifario"
+			],
+			[
+				"id_prove",
+				"id_proveedor"
+			],
+			[
+				"proveedor",
+				"proveedor_model"
+			],
+			[
+				"id_proveedor_",
+				"id_proveedor_tarifario"
+			],
+			[
+				"proo",
+				"proveedor_model"
+			],
+			[
+				"renombrar",
+				"renombrar_tarifario"
+			],
+			[
+				"id_provee",
+				"id_proveedor_tarifario"
+			],
+			[
+				"numero_completo_op_",
+				"numero_completo_op_nuevo"
+			],
+			[
+				"nu",
+				"numero_completo_op_nuevo"
+			],
+			[
+				"eli",
+				"eliminados"
+			],
+			[
+				"difere",
+				"diferencia_montos"
+			],
+			[
+				"codi",
+				"codigo_barras"
+			],
+			[
+				"utf",
+				"utf8_encode"
+			],
+			[
+				"cam",
+				"campania"
+			],
+			[
+				"ru",
+				"rubros"
+			],
+			[
+				"efe",
+				"efectivo_p"
+			],
+			[
+				"cre",
+				"cred_p"
+			],
+			[
+				"total",
+				"total_campania"
+			],
+			[
+				"tota",
+				"total_campania"
+			],
+			[
+				"end",
+				"endforeach"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"file",
+				"filename"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/index.js",
+			"settings":
+			{
+				"buffer_size": 22876,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/materialize.min.css",
+			"settings":
+			{
+				"buffer_size": 140176,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5285,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/nuevocalendar/config.xml",
+			"settings":
+			{
+				"buffer_size": 1148,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index2.html",
+			"settings":
+			{
+				"buffer_size": 6816,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LESS-build/LESS.sublime-build",
+					""
+				],
+				[
+					"Packages/LESS-build/LESS.sublime-build",
+					"Minify"
+				]
+			],
+			[
+				"Packages/LESS-build/LESS.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 75.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/opt/lampp/htdocs/nuevocalendar/www",
+		"/opt/lampp/htdocs/nuevocalendar/www/css",
+		"/opt/lampp/htdocs/nuevocalendar/www/js"
+	],
+	"file_history":
+	[
+		"/home/patricio/Downloads/FUTURAR SITIO/index.html",
+		"/opt/lampp/htdocs/pauta/dir_conflicts.prej",
+		"/opt/lampp/htdocs/nuevocalendar/www/css/materialize.min.css",
+		"/opt/lampp/htdocs/racing_calendar/www/listado.html",
+		"/opt/lampp/htdocs/racing_calendar/www/js/listado.js",
+		"/opt/lampp/htdocs/racing_calendar/www/css/listado.css",
+		"/opt/lampp/htdocs/racing_calendar/www/css/style.css",
+		"/opt/lampp/htdocs/nuevocalendar/www/js/index.js",
+		"/opt/lampp/htdocs/racing_calendar/www/config.xml",
+		"/opt/lampp/htdocs/nuevocalendar/www/index.html",
+		"/opt/lampp/htdocs/nuevocalendar/www/index2.html",
+		"/opt/lampp/htdocs/racing_calendar/www/js/scripts.js",
+		"/opt/lampp/htdocs/test/racing_calendar_eventos_sync.php",
+		"/opt/lampp/htdocs/racing_calendar/www/index.html",
+		"/opt/lampp/htdocs/nuevocalendar/www/css/font-awesome.min.css",
+		"/opt/lampp/htdocs/nuevocalendar/www/js/materialize.min.js",
+		"/opt/lampp/htdocs/seriesmaker/www/js/index.js",
+		"/opt/lampp/htdocs/seriesmaker/www/js/dashboard.js",
+		"/opt/lampp/htdocs/nuevocalendar/www/css/index.css",
+		"/opt/lampp/htdocs/nuevocalendar/www/to_do.txt",
+		"/home/patricio/Downloads/pull-to-refresh-master/app.js",
+		"/home/patricio/Downloads/pull-to-refresh-master/index.html",
+		"/opt/lampp/htdocs/nuevocalendar/www/js/scripts.js",
+		"/opt/lampp/htdocs/pauta/application/views/ordenes/listado_ordenes.php",
+		"/opt/lampp/htdocs/pauta/application/views/reportes/ordenes_pautadas.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/reportes.php",
+		"/opt/lampp/htdocs/pauta/application/models/orden_model.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_recepcion/gav/listado_ordenes_gav.php",
+		"/opt/lampp/htdocs/style.less",
+		"/opt/lampp/htdocs/pauta/application/models/historico_recepcion/h_recepcion_orden_model.php",
+		"/opt/lampp/htdocs/pauta/application/models/historico_ordenes/h_orden_error_model.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_recepcion/control_proveedores/tpl_aviso_error_proveedor_ctrl_prov.php",
+		"/opt/lampp/htdocs/pauta/application/config/email.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/historico_recepcion/h_recepcion_ordenes.php",
+		"/opt/lampp/htdocs/pauta/application/helpers/MY_html_helper.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/historico_ordenes/h_ordenes_errores.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_ordenes/form_h_orden_error.php",
+		"/opt/lampp/htdocs/pauta/application/models/recepcion/recepcion_orden_model.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/historico_recepcion/h_control_proveedores.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/historico_ordenes/h_ordenes.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/recepcion/gav.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/recepcion/recepcion_ordenes.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_recepcion/control_proveedores/listado_ordenes_control_proveedores.php",
+		"/opt/lampp/htdocs/pauta/application/models/historico_recepcion/h_control_proveedores_model.php",
+		"/opt/lampp/htdocs/pauta/application/models/recepcion/gav_model.php",
+		"/opt/lampp/htdocs/pauta/application/views/recepcion/gav/listado_ordenes_gav.php",
+		"/opt/lampp/htdocs/pauta/application/models/historico_recepcion/h_gav_model.php",
+		"/opt/lampp/htdocs/pauta/application/helpers/recepcion_ordenes_helper.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/historico_recepcion/h_gav.php",
+		"/opt/lampp/htdocs/pauta/db/modificaciones/add-columns-flow-scp.sql",
+		"/opt/lampp/htdocs/pauta/application/controllers/historico_facturas/h_facturas.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/facturas.php",
+		"/opt/lampp/htdocs/pauta/application/models/historico_facturas/h_comprobante_model.php",
+		"/opt/lampp/htdocs/pauta/application/models/historico_facturas/h_factura_model.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_facturas/listado_h_facturas.php",
+		"/opt/lampp/htdocs/pauta/application/models/comprobante_model.php",
+		"/opt/lampp/htdocs/pauta/application/models/factura_model.php",
+		"/opt/lampp/htdocs/pauta/application/views/facturas/listado_facturas.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/ordenes.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_recepcion/listado_recepciones.php",
+		"/opt/lampp/htdocs/pauta/application/views/medios/listado_medios.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_ordenes/listado_h_ordenes.php",
+		"/opt/lampp/htdocs/pauta/application/views/recepcion/listado_recepciones.php",
+		"/opt/lampp/htdocs/pauta/application/models/planificacion_model.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/planificaciones.php",
+		"/opt/lampp/htdocs/pauta/application/models/historico_ordenes/h_orden_model.php",
+		"/opt/lampp/htdocs/pauta/assets/js/listado_ordenes_gav.js",
+		"/opt/lampp/htdocs/pauta/assets/js/main.js",
+		"/opt/lampp/htdocs/pauta/assets/js/editar_planificacion.js",
+		"/opt/lampp/htdocs/pauta/application/views/historico_ordenes/form_h_orden.php",
+		"/opt/lampp/htdocs/pauta/assets/js/form_h_orden.js",
+		"/opt/lampp/htdocs/fuckapp/db/fuckapp_completa.sql",
+		"/opt/lampp/htdocs/pauta/assets/js/form_factura.js",
+		"/opt/lampp/htdocs/pauta/application/models/medio_model.php",
+		"/opt/lampp/htdocs/pauta/assets/js/form_medio.js",
+		"/opt/lampp/htdocs/pauta/application/views/medios/form_medio.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/medios.php",
+		"/opt/lampp/htdocs/pauta/application/views/proveedores/form_proveedor.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/proveedores.php",
+		"/opt/lampp/htdocs/pauta/assets/js/form_proveedor.js",
+		"/opt/lampp/htdocs/pauta/application/models/proveedor_model.php",
+		"/opt/lampp/htdocs/fuckapp/.htaccess",
+		"/home/patricio/Downloads/fuckapp conflictos/MY_Controller.php",
+		"/home/patricio/Downloads/fuckapp conflictos/config.php",
+		"/opt/lampp/htdocs/fuckapp/application/core/MY_Controller.php",
+		"/opt/lampp/htdocs/fuckapp/application/config/autoload.php",
+		"/opt/lampp/htdocs/fuckapp/application/config/config.php",
+		"/opt/lampp/htdocs/fuckapp/application/config/acl.php",
+		"/home/patricio/Downloads/pauta conflictos/proveedor_model.php.mine",
+		"/opt/lampp/htdocs/pauta/db/modificaciones/update_proveedor_tarifario_set_id_padre.sql",
+		"/opt/lampp/htdocs/pauta/system/libraries/Session.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/acl/acl_login.php",
+		"/opt/lampp/htdocs/pauta/application/core/MY_Controller.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/historico_facturas/h_notas_credito.php",
+		"/opt/lampp/htdocs/pauta/db/modificaciones/alter_table_proveedor_tarifario_add_id_padre.sql",
+		"/opt/lampp/htdocs/pauta/application/views/historico_facturas/form_h_notas_ver.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_facturas/form_h_notas_credito.php",
+		"/opt/lampp/htdocs/pauta/application/models/historico_facturas/h_nota_credito_model.php",
+		"/opt/lampp/htdocs/pauta/application/models/historico_facturas/h_nota_debito_model.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/historico_facturas/h_notas_debito.php",
+		"/opt/lampp/htdocs/fuckapp/application/views/templates/header.php",
+		"/opt/lampp/htdocs/pauta/application/models/nota_credito_model.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_ordenes/listado_h_ordenes_renumeradas.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/recepcion/control_proveedores.php",
+		"/home/patricio/Downloads/taxonomy-images/taxonomy-images.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_facturas/listado_h_notas_credito.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_facturas/listado_h_notas_debito.php",
+		"/opt/lampp/htdocs/pauta/application/views/proveedores/listado_proveedores.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_recepcion/tabla_tipo_errores_recepcion.php",
+		"/opt/lampp/htdocs/pauta/application/views/recepcion/tabla_tipo_errores_recepcion.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_recepcion/gav/form_procesar_gav.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_recepcion/control_liquidaciones/form_procesar_control_liquidaciones.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/historico_recepcion/h_control_liquidaciones.php",
+		"/opt/lampp/htdocs/pauta/application/views/recepcion/form_tipo_errores.php",
+		"/opt/lampp/htdocs/pauta/application/controllers/recepcion/tipo_errores.php",
+		"/opt/lampp/htdocs/pauta/application/views/historico_recepcion/listado_errores.php",
+		"/opt/lampp/htdocs/pauta/application/views/recepcion/listado_errores.php",
+		"/opt/lampp/htdocs/pauta/application/views/recepcion/gav/form_procesar_gav.php",
+		"/opt/lampp/htdocs/pauta/db/modificaciones/alter_table_hist_recepcion_tipo_error_add_eliminado.sql",
+		"/opt/lampp/htdocs/pauta/db/modificaciones/alter_table_recepcion_tipo_error_add_eliminado.sql",
+		"/opt/lampp/htdocs/pauta/application/controllers/recepcion/control_liquidaciones.php",
+		"/opt/lampp/htdocs/pauta/application/config/routes.php",
+		"/opt/lampp/htdocs/pauta/application/config/recepcion_ordenes.php",
+		"/opt/lampp/htdocs/pauta/application/views/facturas/comprobantes_asociados.php",
+		"/opt/lampp/htdocs/pauta/application/views/recepcion/control_proveedores/form_procesar_control_proveedores.php",
+		"/opt/lampp/htdocs/fuckapp/application/views/alta_usuarios.php",
+		"/opt/lampp/htdocs/fuckapp/application/controllers/Usuarios.php",
+		"/opt/lampp/htdocs/test/paypal/PayPal-PHP-SDK/composer/autoload_real.php"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"onOffline",
+			"onOnline",
+			"transaction_error",
+			"sync",
+			"borrar_contenido_sync",
+			"sync",
+			"aler",
+			"-->\n",
+			"rc2016_firstime",
+			"get_category_nav",
+			"();\n",
+			"get_category_nav",
+			"rango",
+			"date",
+			"insertar_contenido_sync",
+			"insertar_contenido",
+			"progress",
+			"'",
+			"'  +",
+			"' +",
+			"2.1",
+			"brand-logo",
+			"font/font-awesome/",
+			"../fonts/",
+			"mobile-demo",
+			"lengh",
+			"hide-on-med-and-up",
+			"large",
+			"sideNav",
+			"mdi-navigation-me",
+			"*/\n",
+			"listar",
+			"function get_all",
+			"get_filtros_busqueda",
+			"function get_filtros_busqueda",
+			"function get_filtros_bus",
+			"function get_all",
+			"function formatear",
+			"formatear_numero_completo_op",
+			"RUTA_TEMPLATE_AVISO_ERROR_PROVEEDOR",
+			"numero",
+			"h_rece",
+			"row",
+			"_enviar_aviso_proveedores",
+			"get_recepcion_orden_descriptiva_por_",
+			"get_recepcion_orden_descriptiva_por_id",
+			"tipo_error",
+			"RUTA_TEMPLATE_AVISO_ERROR_PROVEEDOR",
+			"get_cuerpo",
+			"CUENTA_EMAIL_FROM",
+			"_enviar_aviso_proveedores",
+			"get_filtro",
+			"listar",
+			"devoluciones_planificacion",
+			"devoluciones control proveedores",
+			"devolucion control proveedores",
+			"procesado_scp_aprobacion",
+			"procesado_scp",
+			"procesadp_scp",
+			"elimi",
+			"_actualizar(",
+			"_",
+			"_actualizar(",
+			"_agregar(",
+			"_get_",
+			"_filtros_busqueda",
+			"factu",
+			"_listar",
+			"listar",
+			"get_all",
+			"$sentido",
+			"lettra",
+			"pagado",
+			"listar",
+			"get_all",
+			"_filtros_busqueda",
+			"_get_filtros_estados_scp",
+			"function _get_filtro",
+			"listar",
+			"function _get_filtro",
+			"listar",
+			"function _get_filtro",
+			"get_filtro",
+			"function get_filtro",
+			"get_filtro",
+			"busqueda",
+			"listar",
+			"filtro",
+			"mostrar_ventana_error",
+			"$(\"#fecha_desde",
+			"preg_match",
+			"$(\"#fecha_desde",
+			"$this->input->post(\"fecha_desde\");",
+			"$this->input->post(\"periodo\");",
+			"validar-periodo",
+			"validar_periodo",
+			"function human_to_mysql_date",
+			"human_to_mysql",
+			"_get_valores",
+			"(\".js-calendario-con-meses",
+			"function js-calendario-con-meses",
+			"js-calendario",
+			"js-calendario-con-meses",
+			"asocia",
+			"nuevo_proveedor_tarifario_replicar",
+			"_agre",
+			"agreg",
+			"id_proveedor_tarifario",
+			"buscar_proveedor",
+			"function touch(",
+			"touc",
+			"ci_session",
+			"ci_seccion",
+			"eliminar",
+			"tari",
+			"FUNCTION _actualizar",
+			"_actualizar",
+			"Modal_renombrar_tarifario",
+			"renombra",
+			"myModal_ms_Label",
+			"Modal_",
+			"añadir",
+			"modal",
+			"model",
+			"load",
+			"_validar_montos",
+			"validar_montos",
+			"validar_cut"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"../font/font-awesome/",
+			"font/font-awesome/",
+			"RUTA_LISTADO_RENUMERADAS",
+			"COLLATE=utf8_unicode_ci",
+			"CHARSET=utf8",
+			"COLLATE utf8_unicode_ci",
+			"",
+			"utf8",
+			"ordenes_credito"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15349,
+								15349
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9020.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/materialize.min.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 140176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 23856.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 957.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/opt/lampp/htdocs/nuevocalendar/config.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								952,
+								952
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1774,
+								1774
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/LESS-build/LESS.sublime-build",
+	"project": "rc2016.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"index",
+				"index2.html"
+			],
+			[
+				"mate",
+				"css/materialize.min.css"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"in",
+				"js/index.js"
+			],
+			[
+				"css",
+				"css/materialize.min.css"
+			],
+			[
+				"ma",
+				"css/materialize.min.css"
+			],
+			[
+				"listado_ordenes_control_gap",
+				"application/views/historico_recepcion/control_gap/listado_ordenes_control_gap.php"
+			],
+			[
+				"h_control",
+				"application/controllers/historico_recepcion/h_control_gap.php"
+			],
+			[
+				"orden_mo",
+				"application/models/orden_model.php"
+			],
+			[
+				"listado_ordenes",
+				"application/views/ordenes/listado_ordenes.php"
+			],
+			[
+				"listgado",
+				"application/views/historico_recepcion/gav/listado_ordenes_gav.php"
+			],
+			[
+				"ordenes_pautadas",
+				"application/views/reportes/ordenes_pautadas.php"
+			],
+			[
+				"reporte",
+				"application/controllers/reportes.php"
+			],
+			[
+				"tpl_aviso_error_proveedor_ctrl_prov",
+				"application/views/historico_recepcion/control_proveedores/tpl_aviso_error_proveedor_ctrl_prov.php"
+			],
+			[
+				"recepecion_orde",
+				"application/models/historico_recepcion/h_recepcion_orden_model.php"
+			],
+			[
+				"recep",
+				"application/models/recepcion/recepcion_orden_model.php"
+			],
+			[
+				"h_erro",
+				"application/models/historico_ordenes/h_orden_error_model.php"
+			],
+			[
+				"recepcion_orden_mo",
+				"application/models/recepcion/recepcion_orden_model.php"
+			],
+			[
+				"form_h_orden_error",
+				"application/views/historico_ordenes/form_h_orden_error.php"
+			],
+			[
+				"h_ordenes",
+				"application/controllers/historico_ordenes/h_ordenes_errores.php"
+			],
+			[
+				"recepcion_ordenes",
+				"application/controllers/historico_recepcion/h_recepcion_ordenes.php"
+			],
+			[
+				"gav",
+				"application/controllers/recepcion/gav.php"
+			],
+			[
+				"h_control_proveedores_model",
+				"application/models/historico_recepcion/h_control_proveedores_model.php"
+			],
+			[
+				"listado_ordenes_control_proveedores",
+				"application/views/historico_recepcion/control_proveedores/listado_ordenes_control_proveedores.php"
+			],
+			[
+				"h_contro",
+				"application/controllers/historico_recepcion/h_control_proveedores.php"
+			],
+			[
+				"gav_",
+				"application/models/recepcion/gav_model.php"
+			],
+			[
+				"listado_ordenes_gav",
+				"application/views/recepcion/gav/listado_ordenes_gav.php"
+			],
+			[
+				"recepcion_orden_model",
+				"application/models/recepcion/recepcion_orden_model.php"
+			],
+			[
+				"h_ga",
+				"application/controllers/historico_recepcion/h_gav.php"
+			],
+			[
+				"h_comrp",
+				"application/models/historico_facturas/h_comprobante_model.php"
+			],
+			[
+				"h_fac",
+				"application/models/historico_facturas/h_factura_model.php"
+			],
+			[
+				"factu",
+				"application/controllers/facturas.php"
+			],
+			[
+				"listado_h_",
+				"application/views/historico_facturas/listado_h_facturas.php"
+			],
+			[
+				"listado_rece",
+				"application/views/historico_recepcion/listado_recepciones.php"
+			],
+			[
+				"ordene",
+				"application/controllers/ordenes.php"
+			],
+			[
+				"comprobante",
+				"application/models/comprobante_model.php"
+			],
+			[
+				"factura",
+				"application/controllers/facturas.php"
+			],
+			[
+				"listado_orde",
+				"application/views/ordenes/listado_ordenes.php"
+			],
+			[
+				"listado_",
+				"application/views/medios/listado_medios.php"
+			],
+			[
+				"listado_fa",
+				"application/views/facturas/listado_facturas.php"
+			],
+			[
+				"compro",
+				"application/models/historico_facturas/h_comprobante_model.php"
+			],
+			[
+				"listado_recepciones",
+				"application/views/recepcion/listado_recepciones.php"
+			],
+			[
+				"recepcio",
+				"application/controllers/recepcion/recepcion_ordenes.php"
+			],
+			[
+				"plani",
+				"application/controllers/planificaciones.php"
+			],
+			[
+				"planifi",
+				"application/controllers/planificaciones.php"
+			],
+			[
+				"h_rece",
+				"application/models/historico_recepcion/h_recepcion_orden_model.php"
+			],
+			[
+				"h_recepcion",
+				"application/controllers/historico_recepcion/h_recepcion_ordenes.php"
+			],
+			[
+				"listado_h_or",
+				"application/views/historico_ordenes/listado_h_ordenes.php"
+			],
+			[
+				"h_orden",
+				"application/models/historico_ordenes/h_orden_model.php"
+			],
+			[
+				"h_orde",
+				"application/models/historico_ordenes/h_orden_model.php"
+			],
+			[
+				"orden",
+				"application/models/orden_model.php"
+			],
+			[
+				"listado_re",
+				"application/views/recepcion/listado_recepciones.php"
+			],
+			[
+				"listado_o",
+				"application/views/ordenes/listado_ordenes.php"
+			],
+			[
+				"rece",
+				"application/models/recepcion/recepcion_orden_model.php"
+			],
+			[
+				"listar",
+				"application/views/recepcion/listado_recepciones.php"
+			],
+			[
+				"recepcion_ordenes_h",
+				"application/helpers/recepcion_ordenes_helper.php"
+			],
+			[
+				"h_com",
+				"application/models/historico_facturas/h_comprobante_model.php"
+			],
+			[
+				"h_factura_model",
+				"application/models/historico_facturas/h_factura_model.php"
+			],
+			[
+				"h_fact",
+				"application/views/historico_facturas/listado_h_facturas.php"
+			],
+			[
+				"form_factura",
+				"assets/js/form_factura.js"
+			],
+			[
+				"planif",
+				"assets/js/editar_planificacion.js"
+			],
+			[
+				"form_h_orden",
+				"application/views/historico_ordenes/form_h_orden.php"
+			],
+			[
+				"h_or",
+				"application/controllers/historico_ordenes/h_ordenes.php"
+			],
+			[
+				"prove",
+				"assets/js/form_proveedor.js"
+			],
+			[
+				"provee",
+				"application/controllers/proveedores.php"
+			],
+			[
+				"medio",
+				"application/models/medio_model.php"
+			],
+			[
+				"medios",
+				"application/controllers/medios.php"
+			],
+			[
+				"form",
+				"assets/js/form_medio.js"
+			],
+			[
+				"form_medi",
+				"application/views/medios/form_medio.php"
+			],
+			[
+				"form_pro",
+				"assets/js/form_proveedor.js"
+			],
+			[
+				"acl_",
+				"application/controllers/acl/acl_login.php"
+			],
+			[
+				"my_c",
+				"application/core/MY_Controller.php"
+			],
+			[
+				"h_nota",
+				"application/controllers/historico_facturas/h_notas_credito.php"
+			],
+			[
+				"form_pre",
+				"assets/js/form_proveedor.js"
+			],
+			[
+				"form_me",
+				"assets/js/form_medio.js"
+			],
+			[
+				"h_not",
+				"application/models/historico_facturas/h_nota_credito_model.php"
+			],
+			[
+				"form_h_notas_ver",
+				"application/views/historico_facturas/form_h_notas_ver.php"
+			],
+			[
+				"h_nota_",
+				"application/controllers/historico_facturas/h_notas_debito.php"
+			],
+			[
+				"nota_c",
+				"application/models/nota_credito_model.php"
+			],
+			[
+				"contro",
+				"application/controllers/recepcion/control_proveedores.php"
+			],
+			[
+				"listado_h",
+				"application/views/historico_ordenes/listado_h_ordenes.php"
+			],
+			[
+				"h_orden_model",
+				"application/models/historico_ordenes/h_orden_model.php"
+			],
+			[
+				"listadp",
+				"application/views/proveedores/listado_proveedores.php"
+			],
+			[
+				"form_procesar_control_liquidaciones",
+				"application/views/historico_recepcion/control_liquidaciones/form_procesar_control_liquidaciones.php"
+			],
+			[
+				"control_liqui",
+				"application/controllers/historico_recepcion/h_control_liquidaciones.php"
+			],
+			[
+				"tabla_tipo_errores_recepcion",
+				"application/views/recepcion/tabla_tipo_errores_recepcion.php"
+			],
+			[
+				"form_procesar_gav",
+				"application/views/historico_recepcion/gav/form_procesar_gav.php"
+			],
+			[
+				"h_g",
+				"application/controllers/historico_recepcion/h_gav.php"
+			],
+			[
+				"listado_err",
+				"application/views/recepcion/listado_errores.php"
+			],
+			[
+				"listado_errores",
+				"application/views/historico_recepcion/listado_errores.php"
+			],
+			[
+				"form_tipo_errores",
+				"application/views/recepcion/form_tipo_errores.php"
+			],
+			[
+				"rou",
+				"application/config/routes.php"
+			],
+			[
+				"form_procesar_control_proveedores",
+				"application/views/recepcion/control_proveedores/form_procesar_control_proveedores.php"
+			],
+			[
+				"comprobante_model",
+				"application/models/comprobante_model.php"
+			],
+			[
+				"form_or",
+				"application/views/ordenes/form_orden.php"
+			],
+			[
+				"control_pro",
+				"application/controllers/recepcion/control_proveedores.php"
+			],
+			[
+				"form_h_",
+				"application/views/historico_ordenes/form_h_orden.php"
+			],
+			[
+				"apppath",
+				"application/helpers/pauta_helper.php"
+			],
+			[
+				"loader",
+				"system/core/Loader.php"
+			],
+			[
+				"consta",
+				"application/config/constants.php"
+			],
+			[
+				"load",
+				"system/core/Loader.php"
+			],
+			[
+				"pdf_comprobante_gav",
+				"application/views/recepcion/gav/pdf_comprobante_gav.php"
+			],
+			[
+				"pdf_comprobante_control_liquidaciones",
+				"application/views/recepcion/control_liquidaciones/pdf_comprobante_control_liquidaciones.php"
+			],
+			[
+				"control",
+				"application/controllers/recepcion/control_liquidaciones.php"
+			],
+			[
+				"listado_ordenes_control_liquidaciones",
+				"application/views/recepcion/control_liquidaciones/listado_ordenes_control_liquidaciones.php"
+			],
+			[
+				"control_",
+				"application/controllers/recepcion/control_liquidaciones.php"
+			],
+			[
+				"h_control_gap_model",
+				"application/models/historico_recepcion/h_control_gap_model.php"
+			],
+			[
+				"orden_model",
+				"application/models/orden_model.php"
+			],
+			[
+				"ordenes",
+				"application/controllers/ordenes.php"
+			],
+			[
+				"planifica",
+				"application/models/planificacion_model.php"
+			],
+			[
+				"listado_plani",
+				"application/views/planificaciones/listado_planificaciones.php"
+			],
+			[
+				"listado_pla",
+				"application/views/planificaciones/listado_planificaciones.php"
+			],
+			[
+				"listado",
+				"application/views/facturas/listado_facturas.php"
+			],
+			[
+				"orden_",
+				"application/models/orden_model.php"
+			],
+			[
+				"plan",
+				"application/models/planificacion_model.php"
+			],
+			[
+				"campani",
+				"application/views/reportes/campanias.php"
+			],
+			[
+				"generar",
+				"application/views/reportes/campanias_generar_informe.php"
+			],
+			[
+				"campanias_generar_informe",
+				"application/views/reportes/campanias_generar_informe.php"
+			],
+			[
+				"repo",
+				"application/controllers/reportes.php"
+			],
+			[
+				"exce",
+				"application/libraries/Excel.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/opt/lampp/htdocs/pauta/pauta.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 548.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

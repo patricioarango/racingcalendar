@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" /> 
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+        <title>Racing Calendar</title>
+    </head>
+    <body>
+  <header>
+<div class="navbar-fixed" id="nav_eventos">  
+  <nav class="blue lighten-1">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#" class="side_click" data-id_categoria="1">F&oacute;rmula 1</a></li>
+        <li><a href="#" class="side_click" data-id_categoria="5">Turismo Carretera</a></li>
+        <li><a href="#" class="side_click" data-id_categoria="7">World Rally Car</a></li>
+        <li><a href="#" class="side_click" data-id_categoria="8">S&uacute;per TC 2000</a></li>
+        <li><a href="#" class="side_click" data-id_categoria="9">NASCAR</a></li>
+        <li><a href="#" class="side_click" data-id_categoria="17">Turismo Nacional</a></li>
+        <li><a href="#" class="side_click" data-id_categoria="29">WTCC</a></li>
+        <li><a href="#" class="side_click" data-id_categoria="4">MotoGP</a></li>
+      </ul>
+    <div class="center" id="rango_fechas" data-posicion="0"></div>       
+  </nav>
+</div>  
+
+<div class="navbar-fixed" id="nav_listado">
+  <nav class="blue lighten-1">   
+    <i id="arrow23" class="material-icons small">&#xE5C4;</i>
+    <div class="brand-logo center" id="category_text"></div>   
+  </nav>  
+</div>
+
+</header>  
+  <!-- loading -->
+  <div class="row center loading">
+     <div class="preloader-wrapper active">
+      <div class="spinner-layer spinner-red-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- insert counter -->
+<div class="row" id="insert_message">
+  <div class="center red-text"><i class="material-icons medium">&#xE3E7;</i><span id="insert_message_text" style="font-size:5em;font-weight:200;"> </span><span style="font-size:3em;font-weight:200;">races</span></div>
+</div>
+
+  <section id="eventos">
+
+  </section>
+      <footer class="page-footer blue lighten-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Racing Calendar</h5>
+                <p class="grey-text text-lighten-4">Para saber qu&eacute; carreras hay el fin de semana.</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2015 Copyright Patricio Arango <!-- <button id="borrar">borrar db</button>-->
+            <a class="grey-text text-lighten-4 right" href="http://autowikipedia.es" target="_blank">autowikipedia.es</a>
+            </div>
+          </div>
+        </footer>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jQuery.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="js/latlong.js"></script>
+        <script src="js/geo.js"></script>  
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script>
+var db;
+var shortName = 'rc2016';
+var version = '1.0';
+var displayName = 'rc2016';
+var maxSize = 65535;
+function nullHandler(testo){
+  alert(testo);
+};
+
+function successHandler(){
+  console.log("oka");
+};
+
+function errorHandler(tx,error) {
+   console.log('OKA: ' + error.message + ' code: ' + error.code);
+}
+
+function borrarDB() { 
+   window.localStorage.setItem("rc2016_firstime","0");
+    var db = openDatabase(shortName, version, displayName, maxSize);
+    db.transaction(borracionDB, nullHandler("crear"), errorHandler);
+}
+function borracionDB(tx) { 
+var sql = "DROP TABLE carreras";
+    tx.executeSql(sql); 
+  }
+
+
+$("#borrar").click(function() {
+  borrarDB();
+});
+</script>
+    </body>
+</html>

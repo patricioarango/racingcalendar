@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegaptips.racing_calendar23" version="3" versionCode = "1" xmlns="http://www.w3.org/ns/widgets"  xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Racing Calendar</name>
+    <description>
+        Para saber qué carreras habrá el fin de semana.
+    </description>
+    <author email="patricioarango@gmail.com" href="http://plus.google.com/+PatricioArango">
+        @patricioarango
+    </author>
+    <icon src="icon.png" />
+    <access origin="*" />
+    
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="orientation" value="portrait" />
+     <gap:plugin name="org.apache.cordova.geolocation" />
+     <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+      <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+      <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+     <preference name="permissions" value="none" />
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+
+    <preference name="StatusBarBackgroundColor" value="#3498db" />
+</widget>
