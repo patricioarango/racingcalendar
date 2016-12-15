@@ -21,15 +21,26 @@ rc2016_notfirstime es la variable localstorage para ver si es el primer ingreso
  */
  //variables globales de DDBB
  var db;
-var shortName = 'rc2016';
+var shortName = 'rc2017';
 var version = '1.0';
-var displayName = 'rc2016';
+var displayName = 'rc2017';
 var maxSize = 65535;
+
+             // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyD-IcZy_JVVr828P7rNmn7NdR1OT74cAc4",
+            authDomain: "racingcalendar-aa741.firebaseapp.com",
+            databaseURL: "https://racingcalendar-aa741.firebaseio.com",
+            storageBucket: "racingcalendar-aa741.appspot.com",
+            messagingSenderId: "546833421775"
+          };
+          var appfire = firebase.initializeApp(config);
+          var db_fb = appfire.database();
 
 monthNames = ["","ENE", "FEB", "MAR", "ABR", "MAY", "JUN",
     "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
 
-var app = {
+    var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -59,7 +70,7 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-
+          
 function onOnline(){
     window.localStorage.setItem("rc2016_conexion", "1");
 }
@@ -121,13 +132,35 @@ function generar_contenido() {
     console.log("primera vez" + window.localStorage.getItem("rc2016_firstime"));
     if (window.localStorage.getItem("rc2016_firstime") === null || window.localStorage.getItem("rc2016_firstime") == "0") {
         console.log("creando tablasparapato");
+        window.localStorage.setItem("rc2017_firebase_version",1);
         crear_tablas();
     } else {
+        chequear_version_firebase_db();
         console.log("obtener_contenido from db");
-        mostrar_contenido();
+        //mostrar_contenido();
     }
 }
+function chequear_version_firebase_db(){
+    db_fb.ref('/version').once('value').then(function(snapshot) {
+      var ver = snapshot.val();
+      var version_firebase = ver.version;
+      var version_local = window.localStorage.getItem("rc2017_firebase_version");
+        if (version_firebase > version_local){
+            var nueva_version = Number(version_firebase) + Number(1);
+            db_fb.ref('/version').set({version: nueva_version});   
+            window.localStorage.setItem("rc2017_firebase_version",nueva_version); 
+            borrarDB();
+            generar_contenido();
+        } else {
+            mostrar_contenido();
+        }
+      //console.log(ver.version);
+      //var nueva_version = Number(ver.version) + Number(1);
+      //db.ref('/version').set({version: nueva_version});
+    });
 
+
+}
 function crear_tablas(){
     db.transaction(function(tx){
         console.log("creacionDB");
@@ -146,6 +179,15 @@ function transaction_error(tx, error) {
 }
 
 function traer_contenido(){
+    db_fb.ref('/racingcalendar/db').once('value').then(function(snapshot) {
+    var data = snapshot.val();
+    $.each(data, function(i, item) {
+        insertar_contenido(item, data.length);
+    });
+  });    
+}
+/*
+function traer_contenido(){
     if (window.localStorage.getItem("rc2016_conexion") == "1") {
         console.log("traemos el json");
         var a = Math.floor(Date.now() / 1000);
@@ -162,7 +204,7 @@ function traer_contenido(){
         console.log("no hay conexion para primer uso");
     }
 }
-
+*/
 numero_insert = 1;
 function insertar_contenido(item,total) {
     db.transaction(function(tx) {
@@ -293,7 +335,8 @@ function get_contenido_db(tx, result) {
                         '</div>');            
         } // for
     } //else
-    sync_process();
+    //sync_process();
+    chequear_version_firebase_db();
 }
 
 $("#rango_fechas").on('click',".anterior_se",function(e) {
@@ -535,3 +578,24 @@ $("#nav_listado").click(function(event) {
 });
 
 
+function nullHandler(testo){
+  console.log(testo);
+};
+
+function successHandler(){
+  console.log("oka");
+};
+
+function errorHandler(tx,error) {
+   console.log('OKA: ' + error.message + ' code: ' + error.code);
+}
+
+function borrarDB() { 
+   window.localStorage.setItem("rc2016_firstime","0");
+    var db = openDatabase(shortName, version, displayName, maxSize);
+    db.transaction(borracionDB, nullHandler("crear"), errorHandler);
+}
+function borracionDB(tx) { 
+var sql = "DROP TABLE carreras";
+    tx.executeSql(sql); 
+  }
